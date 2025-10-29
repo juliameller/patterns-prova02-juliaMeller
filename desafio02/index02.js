@@ -28,6 +28,9 @@ class LegacyPaymentSystem {
   }
   
   // Cliente
+  const legacy = new LegacyPaymentSystem();
+  pay(legacy, 100);
+
   const modernAPI = new ModernPaymentAPI();
   const adaptedSystem = new ModernPaymentAdapter(modernAPI);
   pay(adaptedSystem, 100);
